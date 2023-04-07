@@ -1,5 +1,5 @@
 {% set name = "nqlib" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 692b237eebb497bd8a73ac81bbd735fc1acafcbc849ee4083cf77bc55a1d7d35
+  sha256: 6b9f999be11e08056e71e7c556478f18df1c7d0dd527d592e84a8d47d60516f2
 
 build:
   noarch: python
@@ -35,11 +35,11 @@ test:
     - pip
 
 about:
-  home: "https://github.com/knttnk/NQLib"
+  home: https://github.com/knttnk/NQLib
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "NQLib: Library to design noise shaping quantizer for discrete-valued input control."
+  summary: 'NQLib: Library to design noise shaping quantizer for discrete-valued input control.'
 
 extra:
   recipe-maintainers:
