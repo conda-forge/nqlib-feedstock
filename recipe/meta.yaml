@@ -1,5 +1,5 @@
 {% set name = "nqlib" %}
-{% set version = "0.5.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nqlib-{{ version }}.tar.gz
-  sha256: 619559e081cadc16615b65b8fc075f2be71ba9b7af8b4a9f3ecd6139b3942338
+  sha256: 3d52584af46cb6a4577999eeb450bcfec0a15950f458e4844bf49f17ed99aa57
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
